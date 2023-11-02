@@ -5,19 +5,23 @@ const Qualificatio = () => {
     <section id="qualification">
       <div className="container lg:pt-5">
         <div className="text-center">
-          <h1 className="text-headingColor font-[800] text-[3rem] mb-5 border-b border-solid border-smallTextColor">
+          <h1 
+          data-aos ="fade-down"
+          data-aos-duration = "1000"
+          data-aos-delay = "300"
+          className="text-headingColor font-[800] text-[3rem] mb-5 border-b border-solid border-smallTextColor">
             Education{" "}
           </h1>
         </div>
         <div className="flex items-start justify-between">
           <div className="flex items-center mt-5 flex-col">
             <h3 className="text-smallTextColor text-[1.5rem] font-[500]">
-              Full Stack Developement
+              Full Stack Development
             </h3>
             <p>
               <ul>
                 <li>Sheriyansh Coding school Bhopal</li>
-                <li>Mern Stack Developement</li>
+                <li>Mern Stack Development</li>
                 <li>
                   <span className="text-[1rem]">Jan/2023 - Dec/2023</span>
                 </li>
@@ -32,7 +36,7 @@ const Qualificatio = () => {
                 <li>AI/Ml</li>
                 <li>SGPA = 7.8</li>
                 <li>
-                  <span className="text-[1rem]">Sept/2022 - June/2023</span>
+                  <span className="text-[1rem]">Sept/2022 - June/2024</span>
                 </li>
               </ul>
             </p>
