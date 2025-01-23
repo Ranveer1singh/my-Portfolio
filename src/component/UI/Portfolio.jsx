@@ -1,10 +1,11 @@
-import React, {useEffect,useState} from "react";
+import React, {useState} from "react";
 import data from "../../assets/data/portfolioData";
 
 const Portfolio = () => {
 
-  const [nextItems,setNextItems] = useState(6);
+  const [nextItems,setNextItems] = useState(3);
   const [portfolios,setPortfolios] = useState(data);
+console.log('data', data);
 
   const loadMoreHandler = () => {
     setNextItems(prev => prev+3)
@@ -34,7 +35,7 @@ const Portfolio = () => {
         </div>
 
         <div className="flex items-center justify-between flex-wrap mt-12">
-          {portfolios?.slice(nextItems, 0)?.map((Portfolio, index) => (
+          {portfolios?.slice(0,nextItems)?.map((Portfolio, index) => (
             <div
               data-aos="fade-zoom-in"
               data-aos-delay="50"

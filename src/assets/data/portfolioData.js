@@ -1,10 +1,10 @@
-import portfolioImg01 from "../images/portfolio-01.jpg";
-import portfolioImg02 from "../images/portfolio-02.jpg";
-import portfolioImg03 from "../images/portfolio-03.jpg";
-import portfolioImg04 from "../images/portfolio-04.jpg";
-import portfolioImg05 from "../images/portfolio-05.jpg";
-import portfolioImg06 from "../images/portfolio-06.jpg";
-import portfolioImg07 from "../images/portfolio-07.jpg";
+import portfolioImg01 from "../images/Screenshot (25).png";
+import portfolioImg02 from "../images/Screenshot (26).png";
+import portfolioImg03 from "../images/Screenshot (27).png";
+import portfolioImg04 from "../images/Screenshot (28).png";
+import portfolioImg05 from "../images/Screenshot (29).png";
+import portfolioImg06 from "../images/Screenshot (30).png";
+import portfolioImg07 from "../images/Screenshot (25).png";
 
 const portfolios = [
   {
