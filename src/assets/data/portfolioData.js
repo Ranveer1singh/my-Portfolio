@@ -38,7 +38,7 @@ const portfolios = [
     id: "03",
     imgUrl: [Ecco1, Ecco2, Ecco3, Ecco4],
     category: "Ui UX",
-    title: "Ecomerce ",
+    title: "eCommerce  ",
     description:
       "React-Redux eCommerce project is a dynamic web application designed to provide a seamless shopping experience while demonstrating efficient state management",
     technologies: ["React", "Tailwind css", "Redux" , "react-router-dom"],
