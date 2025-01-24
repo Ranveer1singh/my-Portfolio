@@ -1,15 +1,22 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import data from "../../assets/data/portfolioData";
+import ProjectDeatail from "./ProjectDeatail";
 
 const Portfolio = () => {
+  const [nextItems, setNextItems] = useState(3);
+  const [portfolios, setPortfolios] = useState(data);
+  const [projectDeatils, SetProjectDeatils] = useState("");
+  const [model, setModel] = useState(false);
 
-  const [nextItems,setNextItems] = useState(3);
-  const [portfolios,setPortfolios] = useState(data);
-// console.log('data', data);
+  const ProjectModel = (portfolio) => {    
+    SetProjectDeatils(portfolio);
+    setModel(true);
+  };
+  // // console.log('data', data);
 
   const loadMoreHandler = () => {
-    setNextItems(prev => prev+3)
-  }
+    setNextItems((prev) => prev + 3);
+  };
 
   return (
     <section id="portfolio">
@@ -34,20 +41,31 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between flex-wrap mt-12">
-          {portfolios?.slice(0,nextItems)?.map((Portfolio, index) => (
+        {/* <div className="grid grid-cols-3 "> */}
+        <div className="flex items-center justify-between flex-wrap mt-12 ">
+          {portfolios?.slice(0, nextItems)?.map((Portfolio, index) => (
             <div
               data-aos="fade-zoom-in"
               data-aos-delay="50"
-              data-aos-duration ="1000"
-              key={index} // You should add a unique key to each mapped element
-              className="group max-w-full sm:w-[48.5%] mb:w-[31.8%] lg:w-[32.2%] relative z-[1]"
+              data-aos-duration="1000"
+              key={index}
+              className="group max-w-full  mb-4 m:w-[48.5%] mb:w-[31.8%] lg:w-[32.2%] relative z-[1]"
+              style={{
+                height : "250px",
+                // backgroundColor : "#dadada"
+              }}
             >
-              <figure>
-                <img className="rounded-[10px]" src={Portfolio.imgUrl} alt="" />
+              <figure className="w-full h-full">
+                <img
+                  className="rounded-[10px] h-full"
+                  src={Portfolio.imgUrl[0]}
+                  alt=""
+                />
               </figure>
               <div className="w-full h-full bg-primaryolor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
-                <button className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200">
+                <button
+                onClick={()=> ProjectModel(Portfolio)}
+                className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200">
                   see details
                 </button>
               </div>
@@ -55,14 +73,18 @@ const Portfolio = () => {
           ))}
         </div>
         <div className="text-center mt-6">
-
-            {
-              nextItems <   portfolios.length && data.length > 6 && (<button onClick={loadMoreHandler}
+          {nextItems < portfolios.length && data.length > 6 && (
+            <button
+              onClick={loadMoreHandler}
               className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
-              >Load</button>
-    
-            )}
+            >
+              Load
+            </button>
+          )}
         </div>
+        {model && (
+          <ProjectDeatail  data={projectDeatils} model={model} closeModal={() => setModel(false)}/>
+        )}
       </div>
     </section>
   );
