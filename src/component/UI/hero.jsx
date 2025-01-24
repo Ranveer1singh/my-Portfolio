@@ -22,7 +22,7 @@ const hero = () => {
               data-aos-duration="1500"
               className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Ranveer Singh Tomar,<br />A Software Developer, <br /> And a Data Scienctist
+              I'm Ranveer Singh Tomar
             </h1>
             <div
               data-aos="fade-up"

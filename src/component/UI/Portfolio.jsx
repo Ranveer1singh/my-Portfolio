@@ -5,7 +5,7 @@ const Portfolio = () => {
 
   const [nextItems,setNextItems] = useState(3);
   const [portfolios,setPortfolios] = useState(data);
-console.log('data', data);
+// console.log('data', data);
 
   const loadMoreHandler = () => {
     setNextItems(prev => prev+3)

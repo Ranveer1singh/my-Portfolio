@@ -10,6 +10,7 @@ const portfolios = [
   {
     id: "01",
     imgUrl: portfolioImg01,
+    // imgUrl: [portfolioImg01,portfolioImg02, portfolioImg03, portfolioImg04, portfolioImg05, portfolioImg06],
     category: "Web Design",
     title: "Finance Technology Website",
     description:

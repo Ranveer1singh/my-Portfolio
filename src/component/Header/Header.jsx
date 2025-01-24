@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container">
         <div className="flex item-center justify-between">
           {/* =======logo========*/}
-          <div className=" mt-4 flex item-center gap-[10px]">
+          <div className=" mt-4 flex items-center gap-[10px] ">
             <span
               className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-[500] 
                     rounded-full flex items-center justify-center"
@@ -18,8 +18,8 @@ const Header = () => {
               R
             </span>
 
-            <div className="leading-[20px]">
-              <h2 className="text-xl text-smallTextColor font-[700]">Fresher</h2>
+            <div className="leading-[20px] p">
+              <h2 className="text-xl text-smallTextColor font-[700]">Software</h2>
               <p className="text-smallTextColor text-[16px] font-[500]">
                 Developer
               </p>
@@ -42,7 +42,7 @@ const Header = () => {
                 <a className="text-smallTextColor font[600]" href="#contact">Contact</a>
               </li>
               <li>
-                <a className="text-smallTextColor font[600]" href="#qualification">Qualifications</a>
+                <a className="text-smallTextColor font[600]" href="#achivements">Achivements</a>
               </li>
             </ul>
           </div>

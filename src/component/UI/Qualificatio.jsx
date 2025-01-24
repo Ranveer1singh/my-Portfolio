@@ -10,7 +10,7 @@ const Qualificatio = () => {
           data-aos-duration = "1000"
           data-aos-delay = "300"
           className="text-headingColor font-[800] text-[3rem] mb-5 border-b border-solid border-smallTextColor">
-            Education{" "}
+            Achivments{" "}
           </h1>
         </div>
         <div className="flex items-start justify-between">
