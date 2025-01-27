@@ -13,9 +13,9 @@ const Services = () => {
           </h2>
           <p className="lg:max-w-[600] lg:max-auto text-headingColor font-[500] text-[16px] leading-7">
             "Bringing your vision to life is what I do best. With expertise in a{" "}
-            <br />
+            
             variety of technologies, I can help you turn your expectations into{" "}
-            <br />
+            
             reality. Choose the technology, and I'll make it happen."
           </p>
         </div>

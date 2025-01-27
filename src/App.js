@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Header />
-      <Scroll />
+      {/* <Scroll /> */}
       <main>
         <Hero />
         <Services />

@@ -65,13 +65,15 @@ const Achivement = () => {
           //   scrollbar={{ draggable: true }}
         >
           {Images.map((img, id) => (
-            <SwiperSlide key={id}>
+            <SwiperSlide  key={id}>
+              <div className>
               <img
                className="cursor-pointer"
                 src={img} 
                 alt=""
                 onClick={() => openLightbox(img)}
                  />
+                 </div>
             </SwiperSlide>
           ))}
         </Swiper>

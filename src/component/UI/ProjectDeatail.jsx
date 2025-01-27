@@ -15,7 +15,7 @@ const ProjectDeatail = ({ data ,closeModal }) => {
     // const [model ,setModel] = useState(true)
   return (
        
-            <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+            <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
             <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl w-full relative">
               <button
                 // onClick={() => setModel(false)}
@@ -74,7 +74,7 @@ const ProjectDeatail = ({ data ,closeModal }) => {
           <img
             src={currentImage}
             alt="Full Screen"
-            className="max-w-full max-h-full object-contain"
+            className="max-w-full max-h-full object-contain "
           />
           <button
             className="absolute top-4 right-4 text-black text-3xl"

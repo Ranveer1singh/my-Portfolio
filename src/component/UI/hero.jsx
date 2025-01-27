@@ -30,12 +30,22 @@ const hero = () => {
               data-aos-delay="200"
               className="flex item-center gap-6 mt-7"
             >
-              <a href="#contact">
+              {/* <a href="#contact">
                 <button
                   className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300
                 py-2 px-4 rounded-[8px]"
                 >
                   <i class="ri-mail-line"></i>Hire Me
+                </button>
+              </a> */}
+              <a href="/resume.pdf"
+              download="Ranveer_Resume.pdf" 
+              >
+                <button
+                  className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300
+                py-2 px-4 rounded-[8px]"
+                >
+                  <i class="ri-eye-line"></i>See Resume
                 </button>
               </a>
               <a
