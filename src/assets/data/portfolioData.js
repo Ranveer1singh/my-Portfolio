@@ -47,3 +47,5 @@ const portfolios = [
 ];
 
 export default portfolios;
+  // "homepage": "https://Ranveer1singh.github.io/my-Portfolio",
+// 
