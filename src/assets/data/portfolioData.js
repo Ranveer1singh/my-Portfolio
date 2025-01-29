@@ -12,6 +12,9 @@ import Ecco1 from "../images/ecco1.png"
 import Ecco2 from "../images/ecco2.png"
 import Ecco3 from "../images/ecco3.png"
 import Ecco4 from "../images/ecco4.png"
+import Ecco from "../images/ecco.png"
+import Food from '../images/FoodService.png'
+import MusicApi from "../images/musicAPi.png"
 const portfolios = [
   {
     id: "01",
@@ -43,6 +46,36 @@ const portfolios = [
       "React-Redux eCommerce project is a dynamic web application designed to provide a seamless shopping experience while demonstrating efficient state management",
     technologies: ["React", "Tailwind css", "Redux" , "react-router-dom"],
     siteUrl: "https://github.com/Ranveer1singh/Multimart",
+  },
+  {
+    id: "04",
+    imgUrl: [Ecco],
+    category: "Backend",
+    title: "eCommerce Backend ",
+    description:
+      "Built a backend system using Node.js, Multer, and JWT with role-based authentication. Users can create accounts, log in, and add items to their cart, while only admins can add and manage products. Secure authentication is implemented using JWT, and Multer is used for handling product image uploads",
+    technologies: ["Node Js", "Express Js", "JWT" , "Multer Js", "MongoDb"],
+    siteUrl: "https://github.com/Ranveer1singh/Ecco_practice",
+  },
+  {
+    id: "05",
+    imgUrl: [Food],
+    category: "Backend",
+    title: "Food Service Backend (TypeScript, Node.js)  ",
+    description:
+      "Developed a TypeScript-based Node.js backend for a food ordering platform with role-based authentication. Features include - Vendor Management: Vendors can add restaurants and food items Customer Features: Users can browse, add to cart, and order food Secure Authentication: JWT-based auth and OTP login via Twilio.",
+    technologies: ["TypeScript", "Nodejs ", "Express js" , "Twilio" , "Multer Js", "MongoDb"],
+    siteUrl: "https://github.com/Ranveer1singh/food_service",
+  },
+  {
+    id: "06",
+    imgUrl: [MusicApi],
+    category: "Backend",
+    title: "eCommerce  ",
+    description:
+      "Built a Node.js  backend for a music streaming platform. Users can create playlists and add songs, with Multer handling file uploads. Songs are stored in GFS (GridFS) bucket in chunks using Streams & Pipelines for efficient processing and retrieval. Designed for scalability and seamless playback",
+    technologies: ["Node js ", "Express JS", "MongoDb", "Passport Js", "gfs Buckects"],
+    siteUrl: "https://github.com/Ranveer1singh/Music_Stream_Api",
   },
 ];
 

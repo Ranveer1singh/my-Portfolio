@@ -12,7 +12,7 @@ const Portfolio = () => {
     SetProjectDeatils(portfolio);
     setModel(true);
   };
-  // // console.log('data', data);
+  console.log('data', portfolios);
 
   const loadMoreHandler = () => {
     setNextItems((prev) => prev + 3);
@@ -73,7 +73,7 @@ const Portfolio = () => {
           ))}
         </div>
         <div className="text-center mt-6">
-          {nextItems < portfolios.length && data.length > 6 && (
+          {nextItems < portfolios.length && data.length > 3 && (
             <button
               onClick={loadMoreHandler}
               className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
